@@ -1,0 +1,45 @@
+<div class="form-signin">
+      <ion-grid widith=100%>
+        <ion-row size="12">
+            <ion-col size="12">
+                <ion-item color="dark" widith=100%>
+                    <ion-label position="floating" class="cor">Nome Completo</ion-label>
+                    <ion-input placeholder="João da Silva"[value]="mensagem"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row size="12">
+            <ion-col size="12">
+                <ion-item color="dark" widith=100%>
+                    <ion-label position="floating" class="cor">E-mail</ion-label>
+                    <ion-input placeholder="joao@joao.com.br"[value]="mensagem"></ion-input>
+                  </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row size="12">
+            <ion-col size="12">
+                <ion-item color="dark" widith=100%>
+                    <ion-label position="floating" class="cor">Telefone</ion-label>
+                    <ion-input placeholder="(62) 3123-4567"[value]="mensagem"></ion-input>
+                  </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row size="12">
+            <ion-col size="6">
+                <ion-item color="dark">
+                    <ion-label position="floating" class="cor">Senha</ion-label>
+                    <ion-input placeholder="S3nh@e"[value]="mensagem"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col size="6">
+                <ion-item color="dark">
+                    <ion-label position="floating" class="cor">Confirmar Senha</ion-label>
+                    <ion-input placeholder="C0nF1rm4R S3nh@"[value]="mensagem"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+      <ion-button *ngIf="!show" color="success" expand="block" (click)="onclick()">Cadastrar</ion-button>
+      <ion-button *ngIf="show"routerLink="/auth/login" color="success" expand="block">Voltar</ion-button>
+</div>

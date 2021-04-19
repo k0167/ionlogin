@@ -1,0 +1,10 @@
+<div class="form-signin">
+
+  <ion-item color="dark">
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input placeholder="example@example.com" [value]="mensagem"></ion-input>
+  </ion-item>
+
+<ion-button *ngIf="!show"routerLink="/auth/recuperar" color="success" expand="block" (click)="onclick()">Enviar E-mail de recuperação</ion-button>
+<ion-button *ngIf="show"routerLink="/auth/login" color="success" expand="block">Voltar</ion-button>
+</div>

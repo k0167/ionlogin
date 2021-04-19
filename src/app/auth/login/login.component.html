@@ -1,0 +1,24 @@
+<div class="form-signin">
+
+    <ion-item widith=100% color="dark">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input placeholder="example@example.com"></ion-input>
+    </ion-item>
+    <ion-item widith=100% color="dark"> 
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input placeholder="S3nh@e"></ion-input>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row size="12">
+        <ion-col size="6">
+          <ion-button routerlink="/home" expand="block" color="success">Logar</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button routerLink="/auth/cadastrar" expand="block" color="primary">Cadastrar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button routerLink="/auth/recuperar" fill="outline" expand="block">Esqueci Minha Senha</ion-button>
+</div>
